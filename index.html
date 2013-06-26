@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<title>RWD Retrofitting an Enterprise</title>
+	
+	<link href="slideshow.css" rel="stylesheet" />
+	<link href="theme.css" rel="stylesheet" />
+	<link href="talk.css" rel="stylesheet" />
+	<script src="prefixfree.min.js"></script>
+</head>
+<body data-duration="10">
+
+<header id="intro" class="slide">
+	<h1>
+		RWD Retrofitting an Older Enterprise Site
+	</h1>
+	<p class="attribution">Patrick Boggs - Interface Developer at Manheim.com</p>
+</header>
+<section>	
+	<section class="slide" title="The Landscape">
+		<h2>Corporate Web World</h2>
+		<ul>
+			<li class="delayed">Code is old</li>
+			<li class="delayed">Decisions are hard</li>
+			<li class="delayed">Too many people involved</li>
+		</ul>
+	</section>
+	
+	<section class="slide">
+		<h2>It’s too hard...</h2>
+		<p class="delayed">Don’t say “we need to be responsive”</p>
+		<p class="delayed">“Let’s make the site work on any screen size, <br>We can do it mostly with CSS”</p>
+	</section>
+	
+	
+</section>
+
+<section>
+	<section class="slide">
+		<h2>Work with what you have</h2>
+		<ul>
+			<li class="delayed">CSS Zen Garden</li>
+			<li class="delayed">Flexible units. Pixels are dead</li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>Compromise</h2>
+		<p>UI/UX, Product and Visual design</p>
+		<p>Do what works for the customer</p>
+	</section>
+	
+	<section class="slide">
+		<h2>Iterate</h2>
+		<p class="delayed">Make the retrofit a starting point, not the final product</p>
+	</section>
+	
+	<section class="slide">
+		<h2>Use a little JavaScript</h2>
+		<p class="delayed">You can remove classes and IDs...</p>
+		<p class="delayed">Then add more tech if required and possible</p>
+	</section>
+
+</section>
+
+<section>
+	<section class="slide">
+		<h2>The Hard parts...</h2>
+		<ul>
+			<li class="delayed">Tables/Data Grids</li>
+			<li class="delayed">Media (other than images)</li>
+			<li class="delayed">Modals, Accordions and the like</li>
+			<li class="delayed">Tables/Data Grids</li>
+		</ul>
+	</section>
+	
+</section>
+<section>
+	<section class="slide">
+		<h2>Convincing stakeholders</h2>
+		<ul>
+			<li class="delayed">Roll up your sleeves, prove it works</li>
+			<li class="delayed">Work WITH product owners SHOW them what you can do with CSS</li>
+			<li class="delayed">Make sure that is an ongoing process</li>
+			<li class="delayed">Tables/Data Grids are <em>Really</em> a pain</li>
+		</ul>
+	</section>
+
+</section>	
+<section>
+	<section class="slide">
+		<h2>In the future</h2>
+		<ul>
+			<li class="delayed">Like Fluid websites, RWD is a baseline from here on out</li>
+			<li class="delayed">Code everything in small modular parts</li>
+			<li class="delayed">Design them ahead of time to be fluid and responsive</li>
+			<li class="delayed">Make screen sizes part of your workflow</li>
+		</ul>
+	</section>
+
+</section>	
+
+<footer class="slide" title="The End">
+	<h2>Thank you!</h2>
+		<h4>Twitter @patrickclay</h4>
+		<h3>http://codepen.io/patrickclay/</h3>
+		<h3>Gmail pboggs2006@gmail.com</h3>
+	</ul>
+	<div class="credits">
+		<p>Cool Rust image by <a href="http://lostandtaken.com/blog/author/calebkimbrough">Brant Wilson</a></p>
+		<p>Awesome CSSS presentation tool by <a href="https://github.com/LeaVerou/CSSS<">Lea Verou</a></p>
+	</ul>
+
+</footer>
+
+<script src="slideshow.js"></script>
+<script src="plugins/css-edit.js"></script>
+<script src="plugins/css-snippets.js"></script>
+<script src="plugins/css-controls.js"></script>
+<script src="plugins/code-highlight.js"></script>
+<script>
+var slideshow = new SlideShow();
+
+var snippets = document.querySelectorAll('.snippet');
+for(var i=0; i<snippets.length; i++) {
+	new CSSSnippet(snippets[i]);
+}
+
+var cssControls = document.querySelectorAll('.css-control');
+for(var i=0; i<cssControls.length; i++) {
+	new CSSControl(cssControls[i]);
+}
+</script>
+	
+</body>
+</html>
